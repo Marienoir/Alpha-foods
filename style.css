@@ -271,9 +271,11 @@ form h1 {
     padding: 1px;
     font-size: 30px;
 }
-footer{
+footer {
+    display: flex;
     position: relative;
-    top: 700px;
-    height: 200px;
+    top: 350px;
+    color: white;
+    width: 100%;
 }
-}
+footer logo{display: none;}
