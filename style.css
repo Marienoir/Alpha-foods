@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    max-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    margin-left: auto;
+    padding: 1.5em;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
+nav img{
+    height: 20px;
+}
+.google_search{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    right: 410px;
+    top: 40px;
+    background-color: white;
+   
+}
+.rounded_image{
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+.google_voice{
+    height: 25px;
+    position: relative;
+    left: -50px;
+    top: 10px;
+    background-color: white;
+}
+main{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+main img{
+    background-color: black;
+}
+input{
+    width: 80%;
+    padding: 0.9rem;
+    border-radius: 30px;
+    border: 3px solid grey;
+    
+}
+.btn_container{
+    margin-top: 1em;
+}
+.btn_container button{
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+}
+.lang_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lang_section p{
+    margin-right: 10px;
+}
+.lang_section a{
+    color: blue;
+    padding: 10px;
+}
+.lang_section a:hover{
+    text-decoration: underline;
+}
+footer{
+    background-color: rgb(211, 204, 204);
+    position: relative;
+    top: 137px;
+}
+.footer_top{
+    padding: 0.5em 1em;
+}
+.footer_bottom{
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+}
+.left-footer a,
+.right-footer a{
+    margin-right: 1em;
+}
+@media only screen and (max-width:768px) {
+    body{
+        font-size: 12px;
+    }
+    nav{
+        width:35%;
+    }
+    main{
+        width: 60%;
+    }
+    input{
+        width: 100%;
+    }
+    .google_search{
+        right: 360px;
+    }
+    .google_voice{
+        left: 200px;
+        top: -40px;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    body{
+        font-size: 10px;
+    }
+    nav{
+        width:75%;
+    }
+    main{
+        width: 95%;
+    }
+    input{
+        width: 100%;
+    }
+    .google_search{
+        right: 120px;
+    }
+    .google_voice{
+        left: 130px;
+        top: -40px;
+    }
+    .lang_section{
+        display: block;
+    }
+    .left-footer{
+        display: none;
+    }
+    .sm-display-none{
+        display: none;
+    }
+    .right-footer a {
+        margin-right: 3em;
+    }
+}
